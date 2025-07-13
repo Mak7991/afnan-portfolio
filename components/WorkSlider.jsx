@@ -82,33 +82,6 @@ const workSlides = {
         },
       ],
     },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/achievement_10.jpeg",
-          link: "http://example.com",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/achievement_11.jpeg",
-          link: "http://example.com",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/achievement_12.jpeg",
-          link: "http://example.com",
-        },
-      ],
-    },
   ],
 };
 
@@ -140,33 +113,6 @@ const WorkSlider = () => {
                     sizes="(max-width: 768px) 280px, 500px"
                     className="w-[280px] md:w-[500px] h-auto"
                   />
-
-                  {/* overlay gradient */}
-                  <div
-                    className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"
-                    aria-hidden
-                  />
-
-                  {/* title */}
-                  <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
-                    <Link
-                      href={image.link}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]"
-                    >
-                      {/* title part 1 */}
-                      <div className="delay-100">LIVE</div>
-                      {/* title part 2 */}
-                      <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                        PROJECT
-                      </div>
-                      {/* icon */}
-                      <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                        <BsArrowRight aria-hidden />
-                      </div>
-                    </Link>
-                  </div>
                 </div>
               </div>
             ))}

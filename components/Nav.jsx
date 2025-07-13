@@ -6,8 +6,6 @@ import {
   HiHome,
   HiUser,
   HiViewColumns,
-  HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
 import { GrAchievement } from "react-icons/gr";
@@ -17,13 +15,13 @@ import { FaAward } from "react-icons/fa";
 export const navData = [
   { name: "home", path: "/", Icon: HiHome },
   { name: "about", path: "/about", Icon: HiUser },
-  { name: "Achievements", path: "/testimonials", Icon: GrAchievement },
+  { name: "work", path: "/achievements", Icon: GrAchievement },
   {
     name: "awards",
     path: "/awards",
     Icon: FaAward,
   },
-  { name: "work", path: "/work", Icon: HiViewColumns },
+  { name: "achievements", path: "/work", Icon: HiViewColumns },
   {
     name: "contact",
     path: "/contact",

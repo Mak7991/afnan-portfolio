@@ -1,13 +1,3 @@
-import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from "react-icons/rx";
-import { FreeMode, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import "swiper/css";
@@ -15,39 +5,6 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { useState } from "react";
 
-const serviceData = [
-  {
-    Icon: RxCrop,
-    title: "Sitara-e-Pakistan (2023) for outstanding contributions to business",
-    description:
-      "Pakistan's first cricket-themed high-rise, offering 5-star amenities, luxury living, and a unique blend of sports and modern architecture.",
-  },
-  {
-    Icon: RxPencil2,
-    title: "Digital Entrepreneur of the Year at SAPS 2023 (Maldives)",
-    description:
-      "A visionary blend of luxury stays, serene lake & dancing fountain views. Crafted to inspire dreamers, doers, and tomorrow's entrepreneurs.",
-  },
-  {
-    Icon: RxDesktop,
-    title:
-      "Multiple national awards, such as the First Young Entrepreneur Summit Award (2019)",
-    description:
-      "A flagship project combining tech-driven retail spaces with premium residential options.",
-  },
-  {
-    Icon: RxReader,
-    title: "National Entrepreneur Challenge Winner (2019 & 2021)",
-    description:
-      "A revolutionary platform connecting entrepreneurs with investors, fostering innovation and business growth.",
-  },
-  {
-    Icon: RxRocket,
-    title: "Consecutive IQRA University Entrepreneur Awards (2019-2022",
-    description:
-      "Transforming real estate globally with Al, AGI, tokenization & metaverse assets. A halal fintech revolution for smart investors.",
-  },
-];
 
 export const aboutData = [
   {

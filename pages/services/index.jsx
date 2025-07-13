@@ -32,7 +32,7 @@ const Services = () => {
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
               Since 2018, Afnan has been at the forefront of Pakistan's real
-              estate and entrepreneurial landscape. Afnan's exceptional contributions have earned him numerous accolades, including
+              estate and entrepreneurial landscape. Afnan's exceptional contributions have earned him numerous accolades, including:
             </motion.p>
           </div>
 
