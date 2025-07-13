@@ -32,8 +32,6 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@next/font": "^13.4.4",
-    "@react-three/drei": "^9.57.0",
-    "@react-three/fiber": "^8.11.7",
     "framer-motion": "^10.12.16",
     "next": "14.1.1",
     "react": "18.2.0",
@@ -43,7 +41,6 @@
     "react-tsparticles": "^2.9.3",
     "swiper": "^9.4.0",
     "tailwind-scrollbar": "^3.0.4",
-    "three": "^0.150.1",
     "tsparticles": "^2.9.3"
   },
   "devDependencies": {
