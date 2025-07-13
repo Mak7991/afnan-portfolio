@@ -30,14 +30,14 @@ const testimonialData = [
       "A flagship project combining tech-driven retail spaces with premium residential options.",
   },
   {
-    image: "/t-avt-4.png",
+    image: "/t-avt-4.jpeg",
     name: "MustStartup",
     position: "Customer",
     message:
       "A revolutionary platform connecting entrepreneurs with investors, fostering innovation and business growth.",
   },
   {
-    image: "/t-avt-5.png",
+    image: "/t-avt-5.jpeg",
     name: "Brikchain",
     position: "Customer",
     message:

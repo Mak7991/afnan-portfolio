@@ -5,23 +5,23 @@ import { usePathname } from "next/navigation";
 import {
   HiHome,
   HiUser,
-  HiViewColumns,
   HiEnvelope,
 } from "react-icons/hi2";
 import { GrAchievement } from "react-icons/gr";
 import { FaAward } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
 
 // nav data
 export const navData = [
   { name: "home", path: "/", Icon: HiHome },
   { name: "about", path: "/about", Icon: HiUser },
-  { name: "work", path: "/achievements", Icon: GrAchievement },
+  { name: "work", path: "/achievements", Icon: MdWork },
   {
     name: "awards",
     path: "/awards",
     Icon: FaAward,
   },
-  { name: "achievements", path: "/work", Icon: HiViewColumns },
+  { name: "achievements", path: "/work", Icon: GrAchievement },
   {
     name: "contact",
     path: "/contact",
