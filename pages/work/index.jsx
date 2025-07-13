@@ -20,7 +20,7 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              My work <span className="text-accent">.</span>
+              My Goals & <span className="text-accent">Vision.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -29,8 +29,11 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              Afnan is committed to expanding into international markets, and
+              setting benchmarks for themed developments that offer unparalleled
+              experiences. His mission ligns perfectly with the goals of
+              countries looking t attract high-impact entrepreneurs, boost job
+              creation, and foster economic innovation.
             </motion.p>
           </div>
 

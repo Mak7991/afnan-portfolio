@@ -14,22 +14,7 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb4.jpg",
+          path: "/achievement_1.jpeg",
           link: "http://example.com",
         },
       ],
@@ -38,22 +23,88 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/achievement_2.jpeg",
           link: "http://example.com",
         },
+      ],
+    },
+    {
+      images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/achievement_3.jpeg",
           link: "http://example.com",
         },
+      ],
+    },
+    {
+      images: [
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/achievement_4.jpeg",
           link: "http://example.com",
         },
+      ],
+    },
+    {
+      images: [
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/achievement_5.jpeg",
+          link: "http://example.com",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/achievement_6.jpeg",
+          link: "http://example.com",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/achievement_7.jpeg",
+          link: "http://example.com",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/achievement_8.jpeg",
+          link: "http://example.com",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/achievement_10.jpeg",
+          link: "http://example.com",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/achievement_11.jpeg",
+          link: "http://example.com",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/achievement_12.jpeg",
           link: "http://example.com",
         },
       ],
@@ -73,7 +124,7 @@ const WorkSlider = () => {
     >
       {workSlides.slides.map((slide, i) => (
         <SwiperSlide key={i}>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4">
+          <div className="grid grid-cols grid-rows-2 gap-4">
             {slide.images.map((image, imageI) => (
               <div
                 className="relative rounded-lg overflow-hidden flex items-center justify-center group"
@@ -84,8 +135,10 @@ const WorkSlider = () => {
                   <Image
                     src={image.path}
                     alt={image.title}
-                    width={500}
-                    height={300}
+                    width={0}
+                    height={0}
+                    sizes="(max-width: 768px) 280px, 500px"
+                    className="w-[280px] md:w-[500px] h-auto"
                   />
 
                   {/* overlay gradient */}

@@ -10,24 +10,38 @@ import "swiper/css/pagination";
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "Anne Smith",
+    name: "T20 Tower",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Pakistan's first cricket-themed high-rise, offering 5-star amenities, luxury living, and a unique blend of sports and modern architecture.",
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
+    name: "Lakeview BnB",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "A visionary blend of luxury stays, serene lake & dancing fountain views. Crafted to inspire dreamers, doers, and tomorrow's entrepreneurs.",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Al Mirha Galaxy Mobile Mall & Residency",
     position: "Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "A flagship project combining tech-driven retail spaces with premium residential options.",
+  },
+  {
+    image: "/t-avt-4.png",
+    name: "MustStartup",
+    position: "Customer",
+    message:
+      "A revolutionary platform connecting entrepreneurs with investors, fostering innovation and business growth.",
+  },
+  {
+    image: "/t-avt-5.png",
+    name: "Brikchain",
+    position: "Customer",
+    message:
+      "Transforming real estate globally with Al, AGI, tokenization & metaverse assets. A halal fintech revolution for smart investors.",
   },
 ];
 
@@ -61,9 +75,9 @@ const TestimonialSlider = () => {
                 <div className="text-lg">{person.name}</div>
 
                 {/* position */}
-                <div className="text-[12px] uppercase font-extralight tracking-widest">
+                {/* <div className="text-[12px] uppercase font-extralight tracking-widest">
                   {person.position}
-                </div>
+                </div> */}
               </div>
             </div>
 

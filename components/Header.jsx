@@ -13,7 +13,7 @@ const Header = () => {
           <Link href="/">
             <p className="text-white text-[26px] font-bold cursor-pointer flex">
               Afnan  &nbsp;
-              <span className="font-thin"> Ahmed </span> <BsDot className="text-white/20" color="red"/>
+              <span className="font-thin"> Ahmed </span> <BsDot className="text-white/20 mt-4" color="red"/>
             </p>
           </Link>
 

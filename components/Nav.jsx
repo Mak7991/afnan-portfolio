@@ -10,18 +10,20 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
+import { GrAchievement } from "react-icons/gr";
+import { FaAward } from "react-icons/fa";
 
 // nav data
 export const navData = [
   { name: "home", path: "/", Icon: HiHome },
   { name: "about", path: "/about", Icon: HiUser },
-  { name: "services", path: "/services", Icon: HiRectangleGroup },
-  { name: "work", path: "/work", Icon: HiViewColumns },
+  { name: "Achievements", path: "/testimonials", Icon: GrAchievement },
   {
-    name: "testimonials",
-    path: "/testimonials",
-    Icon: HiChatBubbleBottomCenterText,
+    name: "awards",
+    path: "/awards",
+    Icon: FaAward,
   },
+  { name: "work", path: "/work", Icon: HiViewColumns },
   {
     name: "contact",
     path: "/contact",

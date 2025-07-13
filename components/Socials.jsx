@@ -7,39 +7,30 @@ import {
   RiDribbbleLine,
   RiGithubLine,
   RiPinterestLine,
+  RiLinkedinLine
 } from "react-icons/ri";
 
 export const socialData = [
   {
     name: "YouTube",
-    link: "https://youtube.com",
+    link: "https://www.youtube.com/@MUSTSTARTUP",
     Icon: RiYoutubeLine,
   },
   {
     name: "Instagram",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/muststartupofficial?igsh=MXNxcDVuZ3g2ODMyeA==",
     Icon: RiInstagramLine,
   },
   {
     name: "Facebook",
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/profile.php?id=61577280721216",
     Icon: RiFacebookLine,
   },
   {
-    name: "Dribbble",
-    link: "https://dribbble.com",
-    Icon: RiDribbbleLine,
-  },
-  {
-    name: "Pinterest",
-    link: "https://pinterest.com",
-    Icon: RiPinterestLine,
-  },
-  {
-    name: "Github",
-    link: "https://github.com/Mak7991",
-    Icon: RiGithubLine,
-  },
+    name: "Linkedin",
+    link: "https://www.linkedin.com/company/muststartup/",
+    Icon: RiLinkedinLine,
+  }
 ];
 
 const Socials = () => {

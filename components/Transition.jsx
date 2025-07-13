@@ -20,7 +20,7 @@ const Transition = () => {
     <>
       <motion.div
         role="status"
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#D3AF37]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#0E0E55]"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
@@ -30,7 +30,7 @@ const Transition = () => {
       />
       <motion.div
         role="status"
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#E1B768]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#000080]"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
@@ -40,7 +40,7 @@ const Transition = () => {
       />
       <motion.div
         role="status"
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#DBC094]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#4747D4]"
         variants={transitionVariants}
         initial="initial"
         animate="animate"

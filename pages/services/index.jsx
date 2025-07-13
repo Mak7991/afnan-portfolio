@@ -5,7 +5,6 @@ import Circles from "../../components/Circles";
 import ServiceSlider from "../../components/ServiceSlider";
 import { fadeIn } from "../../variants";
 
-
 export const serviceData = [];
 
 const Services = () => {
@@ -23,7 +22,7 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My services <span className="text-accent">.</span>
+              My <span className="text-accent">Achievements.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -32,8 +31,8 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              Since 2018, Afnan has been at the forefront of Pakistan's real
+              estate and entrepreneurial landscape. Afnan's exceptional contributions have earned him numerous accolades, including
             </motion.p>
           </div>
 
