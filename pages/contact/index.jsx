@@ -1,30 +1,41 @@
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
-
 import { fadeIn } from "../../variants";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = "YOUR_SERVICE_ID";
+const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const formRef = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsLoading(true);
 
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => alert("Thank you. I will get back to you ASAP."))
-      .catch((error) => console.log(error))
+    emailjs
+      .send(
+        import.meta.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        import.meta.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        alert("Thank you. I will get back to you ASAP.");
+        formRef.current.reset();
+      })
+      .catch((error) => {
+        alert(
+          "Sorry, there was an error sending your message. Please try again later."
+        );
+        console.log(error);
+      })
       .finally(() => setIsLoading(false));
   };
 
-  
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -43,6 +54,7 @@ const Contact = () => {
 
           {/* form */}
           <motion.form
+            ref={formRef}
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
@@ -51,8 +63,6 @@ const Contact = () => {
             onSubmit={handleSubmit}
             autoComplete="off"
             autoCapitalize="off"
-            // only needed for production (in netlify) to accept form input
-            data-netlify="true"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
