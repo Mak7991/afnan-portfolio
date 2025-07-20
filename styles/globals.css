@@ -70,7 +70,7 @@
   }
   .about-container {
     overflow-y: scroll;
-    max-height: 90vh;
+    max-height: 85vh;
   }
 }
 

@@ -96,7 +96,7 @@ const About = () => {
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           animate="show"
-          className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          className="max-w-[500px] xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
         >
           Afnan holds an MBA and MPhil (2022) with certifications
           in Big Data, Hadoop, Oracle Fusion, and Microsoft Technologies. He
