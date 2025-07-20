@@ -21,7 +21,11 @@ const Contact = () => {
       .send(
         SERVICE_ID,
         TEMPLATE_ID,
-        formRef.current,
+        {
+          from_name: formRef.current.name.value,
+          from_email: formRef.current.email.value,
+          message: formRef.current.message.value,
+        },
         PUBLIC_KEY
       )
       .then(() => {
