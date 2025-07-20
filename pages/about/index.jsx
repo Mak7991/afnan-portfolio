@@ -52,17 +52,45 @@ const About = () => {
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
-              className="flex flex-row gap-x-4 items-center my-4 logo-mobile"
-            >
-              <Image src="/t-avt-1.png" alt="Afnan 1" width={60} height={60} className="rounded-full" />
-              <Image src="/t-avt-2.png" alt="Afnan 2" width={60} height={60} className="rounded-full" />
-              <Image src="/t-avt-3.png" alt="Afnan 3" width={60} height={60} className="rounded-full" />
-              <Image src="/t-avt-4.jpeg" alt="Afnan 4" width={60} height={60} className="rounded-full" />
-              <Image src="/t-avt-5.jpeg" alt="Afnan 5" width={60} height={60} className="rounded-full" />
+            className="flex flex-row gap-x-4 items-center my-4 logo-mobile"
+          >
+            <Image
+              src="/t-avt-1.png"
+              alt="Afnan 1"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
+            <Image
+              src="/t-avt-2.png"
+              alt="Afnan 2"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
+            <Image
+              src="/t-avt-3.png"
+              alt="Afnan 3"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
+            <Image
+              src="/t-avt-4.jpeg"
+              alt="Afnan 4"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
+            <Image
+              src="/t-avt-5.jpeg"
+              alt="Afnan 5"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
           </motion.div>
         </div>
-
-        
 
         <motion.p
           variants={fadeIn("right", 0.4)}
@@ -70,12 +98,10 @@ const About = () => {
           animate="show"
           className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
         >
-          With an MBA and MPhiI (completed in 2022) and certifications in Big
-          Data, Hadoop, Oracle Fusion Applications, and Microsoft Technologies,
-          Afnan combines academic excellence with practical expertise. His core
-          skills include entrepreneurial mindset, marketing, sales, and
-          leadership, enabling him to drive growth and innovation across his
-          ventures.
+          Afnan holds an MBA and MPhil (2022) with certifications
+          in Big Data, Hadoop, Oracle Fusion, and Microsoft Technologies. He
+          brings a strong blend of academic achievement and practical skills in
+          entrepreneurship, marketing, sales, and leadership.
         </motion.p>
       </div>
     </div>
