@@ -35,7 +35,7 @@ const Awards = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 pt-40 pb-32 text-center xl:text-left awards-container">
+    <div className="h-full bg-primary/30 pt-40 pb-32 text-center xl:text-left awards-container overflow-y-auto max-h-screen pb-8">
       <Circles />
 
       {/* avatar img */}
