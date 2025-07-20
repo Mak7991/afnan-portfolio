@@ -71,8 +71,9 @@
     /* position: absolute; */
   }
   .awards-container {
-    overflow-y: scroll;
-    max-height: 80vh;
+    overflow-y: auto;
+    min-height: 100vh;
+    padding-bottom: 2rem;
   }
   .work-container {
     overflow-y: scroll;

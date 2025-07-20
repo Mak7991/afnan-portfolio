@@ -4,6 +4,7 @@ import CountUp from "react-countup";
 import Avatar2 from "../../components/Avatar2";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
+import AwardsSlider from "../../components/AwardsSlider";
 
 //  data
 export const aboutData = [
@@ -34,7 +35,7 @@ const Awards = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left awards-container">
+    <div className="h-full bg-primary/30 pt-40 pb-32 text-center xl:text-left awards-container">
       <Circles />
 
       {/* avatar img */}
@@ -48,8 +49,9 @@ const Awards = () => {
         <Avatar2 />
       </motion.div>
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center">
+      <div className="container mx-auto h-full flex flex-col xl:flex-row items-center xl:items-start gap-8 xl:gap-16">
+        {/* Left: Text and Stats */}
+        <div className="w-full xl:w-1/2 flex flex-col justify-center items-center xl:items-start mb-8 xl:mb-0">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -120,60 +122,16 @@ const Awards = () => {
             </div>
           </motion.div>
         </div>
-        {/* info */}
+        {/* Right: Slider (single instance, always visible) */}
         <motion.div
-          variants={fadeIn("left", 0.4)}
+          variants={fadeIn("up", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="w-full xl:w-1/2 flex items-center justify-center"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item, itemI) => (
-              <div
-                key={itemI}
-                className={`${
-                  index === itemI &&
-                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                onClick={() => setIndex(itemI)}
-              >
-                {item.title}
-              </div>
-            ))}
-          </div>
-
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemI) => (
-              <div
-                key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
-              >
-                {/* title */}
-                <div
-                  className="w-72 cursor-default"
-                  title={item.title}
-                >
-                  {item.title}
-                </div>
-
-                {item.stage && (
-                  <>
-                    <div className="hidden md:flex">-</div>
-                    <div>{item.stage}</div>
-                  </>
-                )}
-
-                <div className="flex gap-x-4">
-                  {/* icons */}
-                  {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className="w-full max-w-xl mx-auto">
+            <AwardsSlider />
           </div>
         </motion.div>
       </div>
