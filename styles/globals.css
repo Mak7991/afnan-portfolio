@@ -75,6 +75,13 @@
     min-height: 100vh;
     padding-bottom: 2rem;
   }
+  .awards-slider-container {
+    overflow-y: auto;
+    min-height: 0vh;
+    padding-bottom: 2rem;
+    height: 100vh;
+    margin-top: -150px;
+  }
   .work-container {
     overflow-y: scroll;
     max-height: 100vh;

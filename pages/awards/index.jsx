@@ -128,7 +128,7 @@ const Awards = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="w-full xl:w-1/2 flex items-center justify-center"
+          className="w-full xl:w-1/2 flex items-center justify-center awards-slider-container"
         >
           <div className="w-full max-w-xl mx-auto">
             <AwardsSlider />
