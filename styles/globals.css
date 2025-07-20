@@ -51,3 +51,26 @@
     @apply w-full h-[180px] p-6 rounded-lg resize-none;
   }
 }
+@media screen and (max-width: 1024px) {
+  .avatar-container {
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    width: 240px;   
+    height: 600px;
+    z-index: 10;
+  }
+  .h1-mobile {
+    margin-top: -250px;
+  }
+  .logo-mobile {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .about-container {
+    overflow-y: scroll;
+    max-height: 90vh;
+  }
+}
+

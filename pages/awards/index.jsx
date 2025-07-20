@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import CountUp from "react-countup";
-import Avatar from "../../components/Avatar";
+import Avatar2 from "../../components/Avatar2";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 
@@ -11,26 +11,21 @@ export const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Sitara-e-Pakistan for outstanding contributions to business",
+        title: "Sitara-e-Pakistan",
         stage: "2023",
       },
       {
-        title: "Digital Entrepreneur of the Year at SAPS",
-        stage: "2023 (Maldives)",
+        title: "South Asian Business Excellence Award",
+        stage: "2023 (Malé, Maldives)",
       },
       {
-        title:
-          "Multiple national awards, such as the First Young Entrepreneur Summit Award",
+        title: "National Entrepreneurship Competition",
+        stage: "2022,2021,2020,2019",
+      },
+      {
+        title: "Young Entrepreneurship Summit ",
         stage: "2019",
-      },
-      {
-        title: "National Entrepreneur Challenge Winner",
-        stage: "2019 & 2021",
-      },
-      {
-        title: "Consecutive IQRA University Entrepreneur Awards",
-        stage: "2019-2022",
-      },
+      }
     ],
   },
 ];
@@ -50,7 +45,7 @@ const Awards = () => {
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
-        <Avatar />
+        <Avatar2 />
       </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
@@ -156,7 +151,7 @@ const Awards = () => {
               >
                 {/* title */}
                 <div
-                  className="w-72 truncate overflow-hidden whitespace-nowrap cursor-default"
+                  className="w-72 cursor-default"
                   title={item.title}
                 >
                   {item.title}

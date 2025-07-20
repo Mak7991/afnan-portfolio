@@ -11,35 +11,35 @@ const testimonialData = [
   {
     image: "/t-avt-1.png",
     name: "T20 Tower",
-    position: "Customer",
+    link: "/T20 Tower - Presentation.pdf",
     message:
       "Pakistan's first cricket-themed high-rise, offering 5-star amenities, luxury living, and a unique blend of sports and modern architecture.",
   },
   {
     image: "/t-avt-2.png",
     name: "Lakeview BnB",
-    position: "Customer",
+    link: "/Lakeview BNB presentation.pdf",
     message:
       "A visionary blend of luxury stays, serene lake & dancing fountain views. Crafted to inspire dreamers, doers, and tomorrow's entrepreneurs.",
   },
   {
     image: "/t-avt-3.png",
     name: "Al Mirha Galaxy Mobile Mall & Residency",
-    position: "Customer",
+    link: "/Al Mirha Galaxy Investor Proposal.pdf",
     message:
       "A flagship project combining tech-driven retail spaces with premium residential options.",
   },
   {
     image: "/t-avt-4.jpeg",
     name: "MustStartup",
-    position: "Customer",
+    link: "/MUSTSTARTUP.pdf",
     message:
       "A revolutionary platform connecting entrepreneurs with investors, fostering innovation and business growth.",
   },
   {
     image: "/t-avt-5.jpeg",
     name: "Brikchain",
-    position: "Customer",
+    link: "/Brikchain Presntation.pdf",
     message:
       "Transforming real estate globally with Al, AGI, tokenization & metaverse assets. A halal fintech revolution for smart investors.",
   },
@@ -70,7 +70,7 @@ const TestimonialSlider = () => {
                     alt={person.name}
                   />
                 </div>
-
+                <a className="mb-2 mx-auto underline" target="_blank" rel="noopener noreferrer" href={person.link}>Detailed Overview</a>
                 {/* name */}
                 <div className="text-lg">{person.name}</div>
               </div>
