@@ -13,7 +13,7 @@ import {
 export const socialData = [
   {
     name: "YouTube",
-    link: "https://www.youtube.com/@MUSTSTARTUP",
+    link: "https://www.youtube.com/@SchoolForEntrepreneurs",
     Icon: RiYoutubeLine,
   },
   {
