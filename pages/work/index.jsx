@@ -4,15 +4,17 @@ import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 import WorkSlider from "../../components/WorkSlider";
 import { fadeIn } from "../../variants";
+import Image from "next/image";
+import Avatar from "../../components/Avatar";
 
 const Work = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center work-container">
       <Circles />
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-y-8 lg:gap-x-8">
           {/* text */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+          <div className="flex-1 text-center lg:text-left mb-4 lg:mb-0">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -31,21 +33,29 @@ const Work = () => {
             >
               Afnan is committed to expanding into international markets, and
               setting benchmarks for themed developments that offer unparalleled
-              experiences. His mission ligns perfectly with the goals of
-              countries looking t attract high-impact entrepreneurs, boost job
+              experiences. His mission aligns perfectly with the goals of
+              countries looking to attract high-impact entrepreneurs, boost job
               creation, and foster economic innovation.
             </motion.p>
           </div>
 
-          {/* slider */}
+          {/* image */}
           <motion.div
-            variants={fadeIn("down", 0.6)}
+            variants={fadeIn("up", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[65%]"
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className="flex-1 flex justify-center items-center"
           >
-            <WorkSlider />
+            <Image
+              src="/vision_avatar.jpeg"
+              alt="Afnan"
+              width={350}
+              height={350}
+              className="rounded-full shadow-lg object-cover"
+              priority
+            />
           </motion.div>
         </div>
       </div>

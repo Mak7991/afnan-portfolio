@@ -3,6 +3,7 @@ import Avatar2 from "../../components/Avatar2";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 import Image from "next/image";
+import { RiYoutubeLine } from "react-icons/ri";
 
 const About = () => {
   return (
@@ -55,54 +56,104 @@ const About = () => {
             className="flex flex-row gap-x-4 items-center my-4 logo-mobile"
           >
             <Image
-              src="/t-avt-1.png"
+              src="/guruHome.jpg"
               alt="Afnan 1"
               width={60}
               height={60}
               className="rounded-full"
             />
             <Image
-              src="/t-avt-2.png"
+              src="/genZ.jpg"
               alt="Afnan 2"
               width={60}
               height={60}
               className="rounded-full"
             />
             <Image
-              src="/t-avt-3.png"
+              src="/guru.jpg"
               alt="Afnan 3"
-              width={60}
-              height={60}
-              className="rounded-full"
-            />
-            <Image
-              src="/t-avt-4.jpeg"
-              alt="Afnan 4"
-              width={60}
-              height={60}
-              className="rounded-full"
-            />
-            <Image
-              src="/t-avt-5.jpeg"
-              alt="Afnan 5"
               width={60}
               height={60}
               className="rounded-full"
             />
           </motion.div>
         </div>
-
-        <motion.p
-          variants={fadeIn("right", 0.4)}
-          initial="hidden"
-          animate="show"
-          className="max-w-[500px] xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
-        >
-          Afnan holds an MBA and MPhil (2022) with certifications
-          in Big Data, Hadoop, Oracle Fusion, and Microsoft Technologies. He
-          brings a strong blend of academic achievement and practical skills in
-          entrepreneurship, marketing, sales, and leadership.
-        </motion.p>
+        <div className="flex-1 flex flex-col justify-center">
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            className="max-w-[500px] xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          >
+            Afnan holds an MBA and MPhil (2022) with certifications in Big Data,
+            Hadoop, Oracle Fusion, and Microsoft Technologies. He brings a
+            strong blend of academic achievement and practical skills in
+            entrepreneurship, marketing, sales, and leadership.
+            <span>
+              <br />
+              <br />
+              Afnan Ahmed Siddique runs two engaging YouTube channels focused on
+              real estate, entrepreneurship, and success-driven mindset
+              development for the modern generation. The Property Spy, founded
+              by Afnan, is a go-to platform for discovering Pakistan’s top real
+              estate opportunities, market insights, and smart investment
+              strategies. School for Entrepreneurs is Afnan’s passion project to
+              empower youth and aspiring founders with real-world business
+              skills, mentorship, and tools to build impactful ventures.
+            </span>
+          </motion.p>
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            className="flex flex-row gap-x-4 items-center logo-mobile"
+          >
+            <a
+              href="https://www.youtube.com/@SchoolForEntrepreneurs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-block"
+            >
+              <Image
+                src="/sfeLogo.png"
+                alt="School for Entrepreneurs YouTube"
+                width={110}
+                height={90}
+                className="rounded"
+              />
+              <span className="absolute top-1 right-1 bg-white rounded-full p-1 shadow-md">
+                <RiYoutubeLine
+                  size={20}
+                  color="#FF0000"
+                  aria-label="YouTube"
+                  title="Visit YouTube Channel"
+                />
+              </span>
+            </a>
+            <a
+              href="https://www.youtube.com/@ThePropertySpy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-block"
+            >
+              <Image
+                src="/tpsLogo.png"
+                alt="The Property Spy YouTube"
+                width={120}
+                height={100}
+                className="rounded"
+              />
+              <span className="absolute top-1 right-1 bg-white rounded-full p-1 shadow-md">
+                <RiYoutubeLine
+                  size={20}
+                  color="#FF0000"
+                  aria-label="YouTube"
+                  title="Visit YouTube Channel"
+                />
+              </span>
+            </a>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

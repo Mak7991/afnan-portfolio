@@ -6,30 +6,6 @@ import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 import AwardsSlider from "../../components/AwardsSlider";
 
-//  data
-export const aboutData = [
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Sitara-e-Pakistan",
-        stage: "2023",
-      },
-      {
-        title: "South Asian Business Excellence Award",
-        stage: "2023 (Malé, Maldives)",
-      },
-      {
-        title: "National Entrepreneurship Competition",
-        stage: "2022,2021,2020,2019",
-      },
-      {
-        title: "Young Entrepreneurship Summit ",
-        stage: "2019",
-      }
-    ],
-  },
-];
 
 const Awards = () => {
   const [index, setIndex] = useState(0);
@@ -68,7 +44,7 @@ const Awards = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Since 2018, Afnan has been at the forefront of Pakistan's real
+            Afnan has been at the forefront of Pakistan's real
             estate and entrepreneurial landscape. Afnan's exceptional
             contributions have earned him numerous accolades, including:
           </motion.p>
@@ -83,7 +59,7 @@ const Awards = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
+                  <CountUp start={0} end={12} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience.
@@ -93,7 +69,7 @@ const Awards = () => {
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={100} duration={0} />k +
+                  <CountUp start={0} end={100} duration={0} />k+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients.

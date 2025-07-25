@@ -7,7 +7,7 @@ import {
   RiDribbbleLine,
   RiGithubLine,
   RiPinterestLine,
-  RiLinkedinLine
+  RiLinkedinLine,
 } from "react-icons/ri";
 
 export const socialData = [
@@ -18,19 +18,19 @@ export const socialData = [
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/muststartupofficial?igsh=MXNxcDVuZ3g2ODMyeA==",
+    link: "https://www.instagram.com/i_afnanofficial_?igsh=bTN2YmIyaG5yends",
     Icon: RiInstagramLine,
   },
   {
     name: "Facebook",
-    link: "https://www.facebook.com/profile.php?id=61577280721216",
+    link: "https://www.facebook.com/share/16dvjsB45E/?mibextid=wwXIfr",
     Icon: RiFacebookLine,
   },
   {
     name: "Linkedin",
-    link: "https://www.linkedin.com/company/muststartup/",
+    link: "https://www.linkedin.com/in/afnan-ahmed-siddique-2027b663?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     Icon: RiLinkedinLine,
-  }
+  },
 ];
 
 const Socials = () => {

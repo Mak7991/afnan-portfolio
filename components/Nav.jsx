@@ -21,7 +21,7 @@ export const navData = [
     path: "/awards",
     Icon: FaAward,
   },
-  { name: "achievements", path: "/work", Icon: GrAchievement },
+  { name: "Vision", path: "/work", Icon: GrAchievement },
   {
     name: "contact",
     path: "/contact",
