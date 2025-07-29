@@ -56,7 +56,7 @@ const About = () => {
             className="flex flex-row gap-x-4 items-center my-4 logo-mobile"
           >
             <Image
-              src="/guruHome.jpg"
+              src="/guruHome.png"
               alt="Afnan 1"
               width={60}
               height={60}

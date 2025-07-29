@@ -29,6 +29,10 @@ const awardsData = [
     name: "National entrepreneurship competition 2022",
   },
   {
+    image: "/award_9.jpeg",
+    name: "Published in Iqra University Official Magazine 2021",
+  },
+  {
     image: "/award_5.jpeg",
     name: "National Entrepreneurship Competition 2021",
   },
