@@ -1,4 +1,4 @@
-import avatarImg from "../public/avatar.jpeg";
+import avatarImg from "../public/avatar.jpg";
 import Image from "next/image";
 
 const Avatar = () => (

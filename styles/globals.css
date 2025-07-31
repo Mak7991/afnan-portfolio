@@ -88,6 +88,65 @@
   }
 
 }
+
+/* About page avatar positioning */
+.about-avatar {
+  left: -370px;
+}
+
+/* Fix for 1400px width layout */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .about-container {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .about-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  /* Adjust avatar position for 1400px */
+  .about-avatar {
+    left: -200px !important;
+  }
+  
+  /* Ensure content doesn't overlap */
+  .about-container .flex-1 {
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Limit text width to prevent overlap */
+  .about-container p {
+    max-width: 450px;
+  }
+  
+  /* Add more space between columns */
+  .about-container .xl\:flex-row {
+    gap: 3rem;
+  }
+}
+
+/* Additional fix for larger screens */
+@media screen and (min-width: 1401px) {
+  .about-container .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+  
+  /* Adjust avatar position for larger screens */
+  .about-avatar {
+    left: -300px !important;
+  }
+  
+  /* Increase gap for better spacing */
+  .about-container .xl\:flex-row {
+    gap: 4rem;
+  }
+}
 @media screen and (max-width: 400px) and (max-height: 800px) {
   .avatar-container {
     position: relative;
